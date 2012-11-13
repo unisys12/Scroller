@@ -19,7 +19,14 @@ Let's get the easy stuff out of the way first
 2) Work with the styling... GOD! I suck at styling, so I wont spend too much time there.
 3) Recheck my HTML and make sure everything is as it should be
 4) Map out the file structure within this readme. Since I am using Codeigniter, this could be confusing as crap to someone that has never used CI.
+5) Move the query, for the requests, out of the controller and into the view... as they should be. Sorry, I was lazy and we all know that lazy equals really bad code. 
 
 For the hairier stuff
-1) Use jQuery to adjust offset of scroll dynamically. I would guess by counting the number of lines in the UL? Counting LI's will not work, since each list item could be a different height or number of lines. Not sure how to go about that yet. 
+*1) Use jQuery to adjust offset of scroll dynamically. I would guess by counting the number of lines in the UL? Counting LI's will not work, since each list item could be a different height or number of lines. Not sure how to go about that yet. 
 2) Read up on the Twitter API and others to see how to go about acccessing their content. Might have to go back through jQuery in 30 Days by Jeffery Way. He covers twitter there, but a lot may have changed since then. 
+ 
+Later that same night....
+
+Welp! I got the jquery figured out. Took me most of the day to nail it down, but I did. Only thing left there is the speed. If you limit the returns to seven, with a duration of 8 secs, it looks fine. Moves by at a nice smooth pace. But if you open up the flood gates and let everything through at once (return everything from the table) the speed is so fast! That is normal, because it is trying to display more records in the same amount of time. All I have to do now is figure out the math to dynamically adjust the duration based on the height of the UL. 
+
+I did tidy up the HTML a bit, but nothing worth mentioning. But I did comment out the @keyframes and animation calls in the CSS. Didn't work on really anything else today except getting the jQuery working close to how I wanted it. Will work on the rest in the morning... 
