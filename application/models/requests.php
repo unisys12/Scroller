@@ -19,7 +19,7 @@ class Requests extends CI_Model {
 	public function createScroll()
 	{
 		// Retrieve all records from the 'requests' table
-		$this->db->get('requests');
+		$this->db->get('requests')->order_by('id', 'desc')->limit('7');
 	}
 
 }
