@@ -22,3 +22,4 @@ Let's get the easy stuff out of the way first
 
 For the hairier stuff
 1) Use jQuery to adjust offset of scroll dynamically. I would guess by counting the number of lines in the UL? Counting LI's will not work, since each list item could be a different height or number of lines. Not sure how to go about that yet. 
+2) Read up on the Twitter API and others to see how to go about acccessing their content. Might have to go back through jQuery in 30 Days by Jeffery Way. He covers twitter there, but a lot may have changed since then. 
