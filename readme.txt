@@ -11,3 +11,14 @@ The "Submit a Request" button takes you to the form that allows the user to subm
 
 ** 2012-11-12 **
 Well, I applied the styling that I suggested above and added animation with keyframes for animation, as of now. 
+
+** 2012-11-13 **
+--TO DO LIST --
+Let's get the easy stuff out of the way first
+1) Add form validation to the scroller_view.php for the scroller-form
+2) Work with the styling... GOD! I suck at styling, so I wont spend too much time there.
+3) Recheck my HTML and make sure everything is as it should be
+4) Map out the file structure within this readme. Since I am using Codeigniter, this could be confusing as crap to someone that has never used CI.
+
+For the hairier stuff
+1) Use jQuery to adjust offset of scroll dynamically. I would guess by counting the number of lines in the UL? Counting LI's will not work, since each list item could be a different height or number of lines. Not sure how to go about that yet. 

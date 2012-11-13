@@ -50,7 +50,7 @@ class Scroller extends CI_Controller {
 
 		if($name == TRUE){ 
 		// Reload the scroller after successful submission
-		$this->load->view('thanks');
+		$this->index();
 		} else {
 			echo "type something!!!";
 		}
