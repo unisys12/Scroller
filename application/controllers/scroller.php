@@ -22,7 +22,9 @@ class Scroller extends CI_Controller {
 		// Load any models used within the view
 		$this->load->model('requests');
 		// Load the method used to retrieve requests and assign it to the variable $requests
-		$data['requests'] = $this->db->get('requests');
+		
+		//$data['requests'] = $this->db->get('requests'); // Gets all requests from the table
+		$data['requests'] = $this->db->order_by('id', 'desc')->limit('7')->get('requests'); // Limits the query to the last 7
 
 		// Load the scroller view
 		$this->load->view('scroller_view', $data);
