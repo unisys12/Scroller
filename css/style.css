@@ -19,7 +19,7 @@
 	background-color: #FFF;
 	box-shadow: 7px 5px 4px rgba(0,0,0,0.5);
 	border: 1px solid black;
-	border-radius: .5em;
+	border-radius: 2px;
 }
 
 .box button {
@@ -36,7 +36,7 @@
     top: 300px;
  }
  to {
-    top: -750px;
+    top: -600px;
  }
 
 }
@@ -46,7 +46,7 @@
    top: 300px;
  }
  to {
-   top: -750px;
+   top: -600px;
  }
 
 }
@@ -56,7 +56,7 @@
    top: 300px;
  }
  to {
-   top: -750px;
+   top: -600px;
  }
 
 }
@@ -66,7 +66,7 @@
    top: 300px;
  }
  to {
-   top: -750px;
+   top: -600px;
  }
 
 }
