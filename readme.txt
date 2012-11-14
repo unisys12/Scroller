@@ -1,6 +1,7 @@
 /* Scroller Readme */
 
 ** 2012-11-11 **
+---------------------
 This is an attempt for me to create a scrolling marquee type of thing for no other reason that to see if I can. I would like to get this project to the point were I can not only pull info into the marquee from a database, which is what I have right now, but also include other sources from say Tweeter, Facebook, Google+... you get the idea. 
 
 I am still really new to web development (about two years at the time of this writing), so from time to time I come up with these ideas and wonder if I can do it. I know this is not a new idea or anything, just sometimes I see stuff on a page and say to myself, "Self! I wonder if you can figure out how to do that? Without looking at their code!!" This is one of those experiments. 
@@ -10,9 +11,11 @@ First I created a decent sized text area to display the data. I am still not sur
 The "Submit a Request" button takes you to the form that allows the user to submit a request. Upon submission, we submit the data to a MySQL database. This is pretty much the point I am at right now. 
 
 ** 2012-11-12 **
+---------------------
 Well, I applied the styling that I suggested above and added animation with keyframes for animation, as of now. 
 
 ** 2012-11-13 **
+---------------------
 --TO DO LIST --
 Let's get the easy stuff out of the way first
 1) Add form validation to the scroller_view.php for the scroller-form
@@ -30,3 +33,9 @@ Later that same night....
 Welp! I got the jquery figured out. Took me most of the day to nail it down, but I did. Only thing left there is the speed. If you limit the returns to seven, with a duration of 8 secs, it looks fine. Moves by at a nice smooth pace. But if you open up the flood gates and let everything through at once (return everything from the table) the speed is so fast! That is normal, because it is trying to display more records in the same amount of time. All I have to do now is figure out the math to dynamically adjust the duration based on the height of the UL. 
 
 I did tidy up the HTML a bit, but nothing worth mentioning. But I did comment out the @keyframes and animation calls in the CSS. Didn't work on really anything else today except getting the jQuery working close to how I wanted it. Will work on the rest in the morning... 
+
+** 2012-11-14 **
+----------------------
+Not that I am trying to be a cop-out/lazy bum, but for some reason I cannot get the model and controller to work like I would want. I checked the CI documentation and found that they way I am doing this, right now, is perfectly legit, but... well, I don't like it. So, for now, I will let it ride and fight this battle at a latter time. 
+
+I started work on the dynamic timing of the scroll animation. Almost got it. Not quite though. But, it's a start.
