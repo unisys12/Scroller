@@ -93,11 +93,11 @@
 	-o-animation: scroll 15s linear infinite;
 	animation: scroll 15s linear infinite; */
 
-	/* Just hides the top of the text */
+	/* Just hides the top of the text at the beginning of the animation. Each scroll is controlled by jQuery from then on */
 	top: 250px; 
 
-	/* Just hides the bottom of the text
-	top: -560px;
+	/* Uncommit this out to see PHP or MySQL errors for the list 
+	top: 0;
 	*/
 }
 
