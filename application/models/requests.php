@@ -16,10 +16,18 @@ class Requests extends CI_Model {
 
 	}
 
-	public function createScroll()
+	public function limitedScroll()
+	{
+		// Limits the query to the last 7
+		$query = $this->db->order_by('id', 'desc')->limit('7')->get('requests'); 
+		return $query->$result();
+	}
+
+	public function fullScroll()
 	{
 		// Retrieve all records from the 'requests' table
-		$this->db->get('requests')->order_by('id', 'desc')->limit('7');
+		$query = $this->db->get('requests');
+		return $query->result();
 	}
 
 }
