@@ -19,10 +19,13 @@ class Scroller extends CI_Controller {
 	 */
 	public function index()
 	{
+		/*
 		// Load any models used within the view
 		$this->load->model('requests');
 		// Load the method used to retrieve requests and assign it to the variable $requests
-		
+		$data['requests'] = $this->requests->fullScroll();
+		*/
+
 		//$data['requests'] = $this->db->get('requests'); // Gets all requests from the table
 		$data['requests'] = $this->db->order_by('id', 'desc')->limit('7')->get('requests'); // Limits the query to the last 7
 
